@@ -1,0 +1,27 @@
+<title>이래도 안일어날꺼야?</title>	
+<!-- CSS -->
+<link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet">
+{% if session['logged_in'] %}
+{% else %}
+<div class="box">
+ <img class="sleep-image", src="{{ url_for('static', filename='image/sleep.png') }}"/>
+ <h1>이래도 안 일어날꺼야?</h1>
+ <h3>로그인이 필요합니다.</h3>
+{% with messages = get_flashed_messages() %}
+	{% if messages %}
+		{% for message in messages %}
+			<p style="color: red">{{ message }}</p><br>
+		{% endfor %}
+	{% endif %}
+{% endwith %}
+ <form action="/login" method="POST">
+  <input type="username" name="username" placeholder="Username"><br>
+  <input type="password" name="password" placeholder="Password"><br><br>
+  <input type="submit" style="WIDTH: 60pt; HEIGHT: 30pt; border-radius: 20px" value="로그인"><br>
+  
+  <div class="rightbottom">
+  <h6>20161040 장우영<br>20161138 조남규</h6>
+  </div>
+ </form>
+</div>
+{% endif %}

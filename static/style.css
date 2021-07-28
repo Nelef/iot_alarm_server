@@ -1,0 +1,70 @@
+body {
+	background-color: #ddd;
+}
+
+.box {
+	position: relative;
+	background-color: white;
+	width: 500px;
+	margin: 100px auto 0;
+	/* margin-top: 100px; */
+	padding : 3rem;
+	text-align: center;
+	border-radius: 20px;
+	border-right: 5px solid #ccc;
+	border-bottom: 5px solid #999;
+}
+
+.sleep-image {
+	margin-left: -400px;
+	margin-top: -120px;
+}
+
+.sleep-images {
+	margin-top: -100px;
+}
+
+.list {
+	list-style: none;
+	width: 70%;
+	background: #E6E6E6;
+	padding: 10px;
+	border-radius: 20px;
+	margin-left: 60px;
+}
+
+.list li:before {
+	content: "★";
+	padding-right: 8px;
+	color: blue;
+}
+
+.list2 {
+	list-style: none;
+	width: 70%;
+	background: #E6E6E6;
+	padding: 10px;
+	border-radius: 20px;
+	margin-left: 60px;
+}
+
+.logout {
+  position: absolute;
+  top: 20px;
+  left: 25px;
+  font-size: 18px;
+}
+
+.clock2 {
+  position: absolute;
+  top: 0px;
+  right: 25px;
+  font-size: 18px;
+}
+
+.rightbottom {
+  position: absolute;
+  bottom: 0px;
+  right: 25px;
+  font-size: 18px;
+}

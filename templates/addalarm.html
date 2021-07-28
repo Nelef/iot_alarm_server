@@ -1,0 +1,53 @@
+<!doctype html>
+<!-- CSS -->
+<link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet">
+<html>
+ <head>
+  <title>이래도 안일어날꺼야?</title>
+ </head>
+ <body> 
+  <div class="box">
+	<h1>알람추가</h1>
+	<h3>추가할 알람 날짜와 시각을 입력하세요</h3>
+	<form action="/addalarm_result" method = "post">
+		<p><input type="date" style="WIDTH: 120pt" id="userdate" name="userdate" min="2019-12-19" max="2099-12-31" value="2019-12-19"></p>
+		<p><input type="time" style="WIDTH: 120pt" id="usertime" name="usertime" value="10:10"></p>
+		<p><input type="submit" style="WIDTH: 60pt; HEIGHT: 30pt; border-radius: 20px" value="확인"></p>
+	</form>
+	
+	<div class="clock2">
+	<h5 id="clock" style="color:gray;">00:00</h5>
+	<script>
+	var clockTarget = document.getElementById("clock");
+	function clock() {
+		var date = new Date();
+		// date Object를 받아오고 
+		var year = date.getFullYear();
+		// 달을 받아옵니다 
+		var month = date.getMonth();
+		// 달을 받아옵니다 
+		var clockDate = date.getDate();
+		// 몇일인지 받아옵니다 
+		var day = date.getDay();
+		// 요일을 받아옵니다. 
+		var week = ['일', '월', '화', '수', '목', '금', '토'];
+		// 요일은 숫자형태로 리턴되기때문에 미리 배열을 만듭니다. 
+		var hours = date.getHours();
+		// 시간을 받아오고 
+		var minutes = date.getMinutes();
+		// 분도 받아옵니다.
+		var seconds = date.getSeconds();
+		// 초까지 받아온후 
+		clockTarget .innerText = `${year}년 ${month+1}월 ${clockDate}일 ${week[day]}요일 ` +
+		`${hours < 10 ? `0${hours}` : hours}:${minutes < 10 ? `0${minutes }`  : minutes }:${seconds < 10 ? `0${seconds }`  : seconds }`;
+	}
+	function init() {
+		clock();
+		setInterval(clock, 1000);
+	}
+	init();
+	</script>
+	</div>
+  </div>
+ </body>
+</html>
