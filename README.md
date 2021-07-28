@@ -15,5 +15,7 @@ iot 알람 서버
 ![슬라이드11](https://user-images.githubusercontent.com/40861980/127267156-163d0a48-4c8e-4851-864b-3a5f94ad82e3.JPG)
 ![슬라이드12](https://user-images.githubusercontent.com/40861980/127267157-75292674-d699-4076-a0c3-2cb877da5477.JPG)
 ![슬라이드13](https://user-images.githubusercontent.com/40861980/127267158-b3456853-4919-429b-bda7-f106d69a4cbd.JPG)
-![슬라이드14](https://user-images.githubusercontent.com/40861980/127267161-73fc03d1-3e84-4c0a-8428-d6cf30a56c67.JPG)
+
+[![동영상](https://user-images.githubusercontent.com/40861980/127267161-73fc03d1-3e84-4c0a-8428-d6cf30a56c67.JPG)](https://youtu.be/d20muCQOti4?t=0s) 
+
 ![슬라이드15](https://user-images.githubusercontent.com/40861980/127267163-cb51d0aa-ca0a-437a-a35c-a173563623bd.JPG)
